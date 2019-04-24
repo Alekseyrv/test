@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index,nofollow">
+    <meta name="description" content="Пример">
+    <meta name="Keywords" content="example">
+</head>
+<body>
+
+<div class="background"></div>
+<header class="banner-header">
+    <div class="container">
+        <div class="row">
+            <div class="header-panel">
+
+                    <span class="header-panel_logo">
+                        <a href="#">
+                            <div class="header-panel_logo logo_img"><img src="assets/img/logo.png" alt="logo"></div>
+                            <div class="header-panel_logo logo_text">BIKE</div>
+                        </a>
+                    </span>
+                <div class="header-panel_inner-container">
+                    <div class="header-panel_menu-button"><a href="#">Меню</a></div>
+                    <div class="header-panel_menu-sale-button"><a href="#">Распродажа (скидки до 90%)</a></div>
+                    <div class="header-panel_city">Мой город: <a class="current-city" href="#">Нижний Новгород</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="user-panel">
+
+                <ul>
+                    <li class="user-panel_city"><span>Мой город: </span><a class="current-city" href="#"> Нижний
+                        Новгород</a></li>
+                    <li class="user-panel_user-info">
+                        <span class="user-panel_user-info user-pic"><img src="assets/img/userpic.png" alt="userpicture"></span>
+                        <div class="user-panel_user-info user-name">Имяпользователя</div>
+                        <div class="user-panel_user-info user-logout">Выход</div>
+                    </li>
+                    <li class="user-panel_cart"><a class="user-panel_cart cart-amount" href="#">5 товаров</a><span>, на сумму </span>
+                        <span class="user-panel_total-price">123 330</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-panel">
+                <div class="contact-panel_for">
+                    <div class="delivery-info">
+                        <span class="delivery_shipping">Бесплатная доставка</span>
+                        <span class="delivery_return">60 дней на возврат</span>
+                    </div>
+                    <div class="call-info">
+                        <a class="call_number" href="#">8 800 2000 600</a>
+                        <a class="call_for-free" href="#">Бесплатный звонок по РФ</a>
+                    </div>
+                    <button type="button" class="call-info-btn">Заказать звонок</button>
+                </div>
+
+                <div class="contact-panel_search-box">
+                    <form>
+                        <input type="search" placeholder="Пример поиска: Велобалт 2015">
+                        <button class="search-box_icon"><img src="assets/img/searchicon.png" alt="search-icon"></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="banner-content">
+            <div class="banner-content_bicycle-box">
+
+                <div class="bicycle-box_bicycle">
+                    <a href="#">
+                        <span class="bicycle-city"></span>
+                    </a>
+                    <div class="bicycle-for">
+                        <a href="#">Городские</a>
+                    </div>
+                </div>
+
+                <div class="bicycle-box_bicycle">
+                    <a href="#">
+                        <span class="bicycle-mount"></span>
+                    </a>
+                    <div class="bicycle-for">
+                        <a href="#">Горные/ Универсальные</a>
+                    </div>
+                </div>
+
+                <div class="bicycle-box_bicycle">
+                    <a href="#">
+                        <span class="bicycle-highway"></span>
+                    </a>
+                    <div class="bicycle-for">
+                        <a href="#">Шоссейные/ триатлон</a>
+                    </div>
+                </div>
+
+                <div class="bicycle-box_bicycle">
+                    <a href="#">
+                        <span class="bicycle-extreme"></span>
+                    </a>
+                    <div class="bicycle-for">
+                        <a href="#">Экстрим (BMX)</a>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="content-help-btn" onclick="PopUpShow()">Я не понимаю что мне выбрать,
+                посоветуйте!
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal-outer">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4>Заполните форму и мы обязательно <br>с Вами свяжемся!</h4>
+        </div>
+        <div class="svg-icon">
+            <svg viewBox="0 0 20 20">
+                <path fill="none"
+                      d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+            </svg>
+        </div>
+        <form id="form" enctype="multipart/form-data" method="post">
+            <div class="form_field">
+                <input id="user-name" name="name" class="form-input" placeholder="Ваше имя" type="text"
+                       autocomplete="off"  required pattern="^[а-яА-ЯёЁa-zA-Z-_\.]{2,20}\s?$">
+                <span class="form_error">Имя должно состоять из одного слова, букв и быть не длиннее 20 символов</span>
+            </div>
+            <div class="form_field">
+                <input id="user-email" name="mail" class="form-input" placeholder="E-mail" type="text"
+                       autocomplete="off"  required
+                       pattern='^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))\s?$'>
+                <span class="form_error">Это поле должно содержать E-Mail. Пример example@site.com</span>
+            </div>
+            <div class="form_field">
+                <input id="user-number" name="number" class="form-input" placeholder="Ваш телефон" type="tel"
+                        required pattern="^((\+7|7|8)+([0-9]){10})$">
+                <span class="form_error">Это поле должно содержать номер телефона. Пример +79998887766 или 79998887766</span>
+            </div>
+            <button type="submit" class="modal_send-btn">Получить совет!</button>
+            <div class="modal_load-container">
+                <div class="modal_load-speeding-wheel"></div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="./js/all.js"></script>
+</body>
+</html>

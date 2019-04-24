@@ -1,0 +1,99 @@
+.modal-content{
+  width:380px;
+  height: auto;
+  background-color: #ebf0f1;
+  padding: 30px 30px 30px 30px;
+  transform: scale(0);
+  transition: transform 250ms ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    .close-modal {
+      transform: translateY(10px);
+      opacity: 1;
+    }
+  }
+}
+
+.modal-outer {
+  display: flex;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.5);
+  overflow:hidden;
+  position:fixed;
+  top:0;
+  left:0;
+  transition: 0.3s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.svg-icon {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  transition: all 800ms ease-in-out;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #d84315;
+}
+.svg-icon:hover{
+  transform: rotate(360deg);
+}
+.form_field{
+  margin-bottom: 15px;
+}
+.form-input{
+  padding: 10px;
+  color: #8f8f8f;
+  width:100%;
+  background-color: #FFFFFF;
+
+}
+
+.modal_send-btn{
+  width: 100%;
+  padding:10px;
+  display: block;
+  color: white;
+  transition: all 350ms ease-in-out;
+}
+
+.form_error{
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  margin-top: 3px;
+  display: none;
+}
+input:valid:not(:placeholder-shown) {
+  border: 1px solid green;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border: 1px solid red;
+}
+input:invalid:not(:placeholder-shown) + .form_error {
+  display: block;
+}

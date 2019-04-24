@@ -1,0 +1,310 @@
+$active-color: #c6ff00;
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+  .header-panel .header-panel_city {
+    display: none;
+  }
+  .current-city:hover {
+    color: $active-color;
+    text-decoration: none;
+  }
+  .background:after {
+    display: block;
+  }
+  .bicycle-for {
+    height: 70px;
+  }
+}
+@media only screen and (min-width : 480px) and (max-width : 749px) {
+  html {
+    overflow-x: hidden;
+  }
+  .container{
+    max-width: 749px;
+  }
+  .background:after {
+    display: block;
+  }
+
+  .bicycle {
+    width: 380px;
+  }
+  .bicycle-for {
+    width: 150px;
+    height: 70px;
+  }
+  .banner-content,
+  .user-panel,
+  .content-help-btn {
+    width: 380px;
+  }
+  .banner-content {
+    margin-top: 343px;
+  }
+  .header-panel {
+    min-width: 480px;
+    & .header-panel_city {
+      margin-right: 21px;
+    }
+  }
+  .user-panel {
+    height: 120px;
+    li:first-child {
+      display: none;
+    }
+    li:nth-child(2){
+      height: 75px;
+      padding-top: 16px;
+    }
+    li:nth-child(3){
+      margin-top: 14px;
+    }
+  }
+  .user-panel_user-info .user-name {
+    margin-top: 3px;
+  }
+  .header-panel_menu-button {
+    float: left;
+  }
+  .header-panel .header-panel_city a:hover {
+    color: $active-color;
+  }
+
+  input[type="search"] {
+    width: 380px;
+  }
+  .contact-panel_for{
+    margin-top: 35px;
+    display: block;
+    position: relative;
+
+  }
+  .contact-panel_search-box{
+    margin-top: 12px;
+    margin-bottom: 40px;
+    & .search-box_icon{
+      right: 36px;
+    }
+  }
+
+  input[type="search"] {
+    padding-left: 42px;
+    padding-right: 70px;
+  }
+
+}
+@media only screen and (min-width : 750px) and (max-width : 974px) {
+  .container{
+    max-width: 750px;
+    min-width: 750px;
+  }
+  .banner-content{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contact-panel_search-box{
+    margin-top: 20px;
+  }
+  .header-panel{
+    width: 750px;
+  }
+  .user-panel{
+    margin-right: 0px;
+    width: 230px;
+    height: 110px;
+    order: 2;
+    li:first-child {
+      display: none;
+    }
+  }
+  .header-panel_logo .logo_text {
+    margin-right: 57px;
+  }
+.header-panel_menu-button {
+    margin-top: 5px;
+    float: left;
+    margin-right: 35px;
+  }
+  .header-panel_menu-sale-button {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
+    letter-spacing: 0.4px;
+    line-height: 1.29;
+  }
+  .banner-content{
+    margin-top: 220px;
+    width: 750px;
+  }
+  .contact-panel {
+    width: 497px;
+    float: left;
+    margin: 0;
+  }
+
+  .contact-panel_for{
+    margin-top: 18px;
+    & .call-info-btn {
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .contact-panel_search-box {
+    margin-top: 17px;
+  }
+  .user-panel_cart .cart-amount{
+    margin-left: 2px;
+  }
+
+  .banner-content_bicycle-box {
+    flex-wrap: wrap;
+    padding-left: 125px;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    .bicycle-box_bicycle {
+      height: 187px;
+      width: 240px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+
+    }
+    .bicycle-box_bicycle:nth-child(3),
+    .bicycle-box_bicycle:nth-child(4){
+      margin-bottom: 0px;
+    }
+  }
+
+  .bicycle-city,
+  .bicycle-mount,
+  .bicycle-highway,
+  .bicycle-extreme{
+    display: block !important;
+    width: 240px !important;
+    height: 140px !important;
+    float: none !important;
+  }
+  .bicycle-for {
+    display: block !important;
+    text-align: center !important;
+    line-height: 43px;
+    margin-left: 0 !important;
+    height: auto;
+  }
+  .content-help-btn {
+    display: block;
+    margin: 55px auto 0;
+    width: 480px;
+    height: 40px;
+  }
+
+  .header-panel .header-panel_city {
+    margin-right: 28px;
+    & a:hover {
+      color: $active-color;
+    }
+  }
+
+}
+@media only screen and (min-width : 975px) {
+  .container {
+    min-width: 975px;
+    max-width: 975px;
+  }
+  .contact-panel_for{
+    display: flex;
+  }
+  .delivery-info {
+    display: inline-block;
+    margin-top: 11px;
+    font-weight: 700;
+    color: #333333;
+    letter-spacing: -0.2px;
+    cursor: pointer;
+    margin-right: 50px;
+
+   .delivery_shipping{
+      border-right: 1px solid #333333;
+      padding-right: 14px;
+    }
+    .delivery_return{
+      margin-left: 10px;
+    }
+  }
+  .header-panel {
+    width: 975px;
+  }
+  .header-panel_logo .logo_text {
+    margin-right: 60px;
+  }
+  .header-panel_menu-sale-button {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+
+  }
+  .user-panel {
+    width: 230px;
+    height: 110px;
+    margin-right: 0;
+    order: 2;
+    li:first-child {
+      display: none;
+    }
+  }
+  .header-panel .header-panel_city a:hover {
+    color: $active-color;
+  }
+  .header-panel .header-panel_city {
+    margin-right: 28px;
+  }
+  .contact-panel{
+    width: 715px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .banner-content {
+    margin-top: 390px;
+    width: 975px;
+  }
+  .banner-content_bicycle-box {
+    flex-wrap: wrap;
+    flex-direction: row;
+    .bicycle-box_bicycle {
+      height: 226px;
+      width: 240px;
+      margin-right: 5px;
+    }
+  }
+
+  .bicycle-box_bicycle:nth-child(4) {
+    margin-right: 0;
+  }
+
+  .bicycle-city,
+  .bicycle-mount,
+  .bicycle-highway,
+  .bicycle-extreme{
+    display: block !important;
+    width: 240px !important;
+    height: 180px !important;
+    float: none !important;
+  }
+  .bicycle-for {
+    display: block !important;
+    text-align: center;
+    line-height: 43px;
+    margin-left: 0 !important;
+  }
+  .content-help-btn {
+    display: block;
+    width: 480px;
+    height: 40px;
+    margin: 40px auto 0;
+  }
+  .header-panel_menu-button{
+    float: left;
+    margin-right: 35px;
+  }
+
+}
