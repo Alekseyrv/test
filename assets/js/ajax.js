@@ -19,10 +19,9 @@ $('.modal_send-btn').on('click', function (e) {
                 $('.modal_load-container').show();
             },
             success: function (response) {
-                console.log(response)
+                
                 var responseStatus = response.substr(-21);
                 //проверка статуса SMTP
-                console.info(responseStatus)
                 if (responseStatus == ('Message has been sent')) {
                     //прячем сам прелодаер
                     $('.modal_load-speeding-wheel').hide();
